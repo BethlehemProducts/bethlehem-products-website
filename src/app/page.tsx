@@ -48,6 +48,45 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        
+<section className="bg-white py-16 border-b">
+  <div className="max-w-7xl mx-auto px-6 text-center">
+
+    <p className="text-[#C9A84C] font-semibold uppercase tracking-[0.25em] mb-4">
+      Quality & Compliance
+    </p>
+
+    <h2 className="text-4xl font-bold text-[#184D3B] mb-10">
+      Built on Quality, Trust, and Reliable Supply
+    </h2>
+
+    <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+
+      {[
+        "HACCP",
+        "ISO 22000",
+        "Halal",
+        "Kosher",
+        "Export Quality",
+      ].map((item) => (
+        <div
+          key={item}
+          className="rounded-xl border bg-gray-50 p-6 shadow-sm hover:shadow-md transition"
+        >
+          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#184D3B] text-[#C9A84C] font-bold">
+            ✓
+          </div>
+
+          <h3 className="font-bold text-[#184D3B]">
+            {item}
+          </h3>
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>
 
         <section id="products" className="py-24 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6">

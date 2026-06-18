@@ -87,6 +87,49 @@ export default function HomePage() {
 
   </div>
 </section>
+<section className="bg-[#F7F5EF] py-24">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="grid lg:grid-cols-2 gap-14 items-center">
+
+      <div>
+        <p className="text-[#C9A84C] font-semibold uppercase tracking-[0.25em] mb-4">
+          Manufacturing Partner
+        </p>
+
+        <h2 className="text-5xl font-bold text-[#184D3B] mb-6">
+          Partnered With Trusted Manufacturers From India
+        </h2>
+
+        <p className="text-lg text-gray-700 mb-6">
+          Bethlehem Products Inc. works with established manufacturers to bring
+          premium South Indian food products to Canadian retailers and wholesalers.
+        </p>
+
+        <p className="text-lg text-gray-700">
+          Our focus is on quality, consistency, and reliable supply so retailers
+          can confidently stock products that customers already know and trust.
+        </p>
+      </div>
+
+      <div className="rounded-2xl bg-white p-10 shadow-xl">
+        <h3 className="text-3xl font-bold text-[#184D3B] mb-6">
+          KM Oil Industries
+        </h3>
+
+        <ul className="space-y-4 text-gray-700 text-lg">
+          <li>✓ Established coconut oil manufacturer</li>
+          <li>✓ Export-focused production</li>
+          <li>✓ Quality-controlled manufacturing</li>
+          <li>✓ Product of India</li>
+          <li>✓ KML coconut oil product range</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
         <section id="products" className="py-24 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6">

@@ -1,15 +1,17 @@
+import Image from "next/image";
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-[#184D3B] text-white border-b border-white/10 shadow-lg">
       <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
 
-        <a href="/" className="flex flex-col">
-          <span className="text-2xl font-bold">
-            Bethlehem Products Inc.
-          </span>
-          <span className="text-xs text-[#C9A84C] tracking-widest uppercase">
-            Premium South Indian Products
-          </span>
+        <a href="/" className="flex items-center">
+          <Image
+            src="/logos/bethlehem-logo.png"
+            alt="Bethlehem Products Inc."
+            width={220}
+            height={60}
+            priority
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-8 font-medium">

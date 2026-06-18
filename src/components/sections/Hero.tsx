@@ -51,8 +51,8 @@ export default function Hero() {
     <Image
       src="/images/products/kml-500ml.jpg"
       alt="KML Coconut Oil 500mL"
-      width={180}
-      height={320}
+      width={260}
+      height={420}
       className="h-[260px] w-auto object-contain"
       priority
     />
@@ -62,8 +62,8 @@ export default function Hero() {
     <Image
       src="/images/products/kml-1l.jpg"
       alt="KML Coconut Oil 1L"
-      width={220}
-      height={360}
+     width={320}
+     height={500}
       className="h-[310px] w-auto object-contain"
       priority
     />
@@ -73,8 +73,8 @@ export default function Hero() {
     <Image
       src="/images/products/kml-2l.jpg"
       alt="KML Coconut Oil 2L"
-      width={200}
-      height={340}
+      width={300}
+      height={460}
       className="h-[280px] w-auto object-contain"
       priority
     />

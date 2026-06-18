@@ -27,126 +27,168 @@ export default function HomePage() {
       <Header />
 
       <main>
+        <Hero />
 
- 
-
-  <Hero />
-
-  <section id="products" className="py-24 bg-gray-50">
-    <div className="max-w-7xl mx-auto px-6">
-
-      <h2 className="text-5xl font-bold mb-12 text-[#184D3B]">
-        Featured Products
-      </h2>
-
-      <div className="grid md:grid-cols-3 gap-8">
-        {products.map((product) => (
-          <div
-            key={product.name}
-            className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition"
-          >
-            <div className="relative h-[350px]">
-              <Image
-                src={product.image}
-                alt={product.name}
-                fill
-                className="object-contain p-6"
-              />
-            </div>
-
-            <div className="p-6">
-              <h3 className="text-2xl font-bold mb-2 text-[#184D3B]">
-                {product.name}
-              </h3>
-
-              <p className="text-gray-600">
-                {product.description}
-              </p>
+        <section className="bg-[#123E2F] border-t border-white/10">
+          <div className="max-w-7xl mx-auto px-6 py-10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              {[
+                ["100%", "Quality Focused"],
+                ["India", "Product Origin"],
+                ["B2B", "Retail & Wholesale"],
+                ["ON", "Ontario Based"],
+              ].map(([title, text]) => (
+                <div key={title}>
+                  <h3 className="text-4xl font-bold text-[#C9A84C]">
+                    {title}
+                  </h3>
+                  <p className="text-white">{text}</p>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
+        </section>
 
-    </div>
-  </section>
-
-  <section className="py-24 bg-white text-gray-900">
+        <section id="products" className="py-24 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-5xl font-bold mb-12 text-[#184D3B]">
+              Featured Products
+            </h2>
 
+            <div className="grid md:grid-cols-3 gap-8">
+              {products.map((product) => (
+                <div
+                  key={product.name}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition"
+                >
+                  <div className="relative h-[350px]">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-contain p-6"
+                    />
+                  </div>
+
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-2 text-[#184D3B]">
+                      {product.name}
+                    </h3>
+                    <p className="text-gray-600">{product.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <p className="text-[#C9A84C] font-semibold uppercase tracking-[0.25em] mb-4">
+                  About Bethlehem Products
+                </p>
+
+                <h2 className="text-5xl font-bold text-[#184D3B] mb-6">
+                  Connecting Premium South Indian Products With Canadian Retailers
+                </h2>
+
+                <p className="text-lg text-gray-600 mb-6">
+                  Bethlehem Products Inc. is a Canadian importer and distributor
+                  focused on bringing trusted South Indian food brands to retailers,
+                  wholesalers, and distributors across Canada.
+                </p>
+
+                <p className="text-lg text-gray-600 mb-8">
+                  Our mission is to provide high-quality coconut oils, coconut-based
+                  ingredients, and specialty food products backed by reliable supply,
+                  professional service, and long-term partnerships.
+                </p>
+              </div>
+
+              <div className="bg-gray-50 rounded-2xl p-10 shadow-xl">
+                <h3 className="text-2xl font-bold text-[#184D3B] mb-6">
+                  Why Work With Us?
+                </h3>
+
+                <ul className="space-y-4 text-gray-700">
+                  <li>✓ Premium South Indian products</li>
+                  <li>✓ Direct manufacturer relationships</li>
+                  <li>✓ Wholesale and retail supply</li>
+                  <li>✓ Ontario-based support</li>
+                  <li>✓ Long-term business partnerships</li>
+                  <li>✓ Focus on quality and reliability</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-24 bg-white text-gray-900">
+          <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-5xl font-bold mb-10 text-[#184D3B]">
               Why Retailers Choose Bethlehem Products
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8">
-
-              <div className="p-8 rounded-xl shadow">
-                <h3 className="text-xl font-bold mb-4 text-[#184D3B]">
-                  Premium Quality
-                </h3>
-
-                <p className="text-gray-700">
-                  Carefully sourced products from trusted manufacturers.
-                </p>
-              </div>
-
-              <div className="p-8 rounded-xl shadow">
-                <h3 className="text-xl font-bold mb-4 text-[#184D3B]">
-                  Canadian Distribution
-                </h3>
-
-                <p>
-                  Reliable supply chain serving retailers across Canada.
-                </p>
-              </div>
-
-              <div className="p-8 rounded-xl shadow">
-                <h3 className="text-xl font-bold mb-4 text-[#184D3B]">
-                  Trusted Partnerships
-                </h3>
-
-                <p>
-                  Long-term relationships with retailers and distributors.
-                </p>
-              </div>
-
+              {[
+                [
+                  "Premium Quality",
+                  "Carefully sourced products from trusted manufacturers.",
+                ],
+                [
+                  "Canadian Distribution",
+                  "Reliable supply chain serving retailers across Canada.",
+                ],
+                [
+                  "Trusted Partnerships",
+                  "Long-term relationships with retailers and distributors.",
+                ],
+              ].map(([title, text]) => (
+                <div key={title} className="p-8 rounded-xl shadow">
+                  <h3 className="text-xl font-bold mb-4 text-[#184D3B]">
+                    {title}
+                  </h3>
+                  <p className="text-gray-700">{text}</p>
+                </div>
+              ))}
             </div>
-
           </div>
         </section>
 
-<section id="partners" className="bg-[#184D3B] py-24 text-white">
-  <div className="mx-auto max-w-7xl px-6 text-center">
-    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#C9A84C]">
-      Retail & Wholesale Partners
-    </p>
+        <section id="partners" className="bg-[#184D3B] py-24 text-white">
+          <div className="mx-auto max-w-7xl px-6 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#C9A84C]">
+              Retail & Wholesale Partners
+            </p>
 
-    <h2 className="mx-auto max-w-3xl text-4xl font-bold md:text-5xl">
-      Ready to Stock KML Products?
-    </h2>
+            <h2 className="mx-auto max-w-3xl text-4xl font-bold md:text-5xl">
+              Ready to Stock KML Products?
+            </h2>
 
-    <p className="mx-auto mt-6 max-w-2xl text-lg text-white/75">
-      Partner with Bethlehem Products Inc. to bring trusted South Indian
-      coconut oil and specialty food products to your customers.
-    </p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-white/75">
+              Partner with Bethlehem Products Inc. to bring trusted South Indian
+              coconut oil and specialty food products to your customers.
+            </p>
 
-    <div className="mt-9 flex justify-center gap-4">
-      <a
-        href="mailto:sales@bethlehemproducts.ca"
-        className="rounded-sm bg-[#C9A84C] px-8 py-4 font-semibold text-white hover:bg-[#D4AF37]"
-      >
-        Contact Sales
-      </a>
+            <div className="mt-9 flex justify-center gap-4">
+              <a
+                href="mailto:sales@bethlehemproducts.ca"
+                className="rounded-sm bg-[#C9A84C] px-8 py-4 font-semibold text-white hover:bg-[#D4AF37]"
+              >
+                Contact Sales
+              </a>
 
-      <a
-        href="#products"
-        className="rounded-sm border border-white/40 px-8 py-4 font-semibold hover:border-[#C9A84C] hover:text-[#C9A84C]"
-      >
-        View Products
-      </a>
-    </div>
-  </div>
-</section>
-
+              <a
+                href="#products"
+                className="rounded-sm border border-white/40 px-8 py-4 font-semibold hover:border-[#C9A84C] hover:text-[#C9A84C]"
+              >
+                View Products
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />

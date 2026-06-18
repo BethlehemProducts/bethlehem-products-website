@@ -134,9 +134,12 @@ export default function HomePage() {
         <section id="products" className="py-24 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-5xl font-bold mb-12 text-[#184D3B]">
-              Featured Products
+              Our Product Range
             </h2>
-
+<p className="mt-4 mb-12 text-lg text-gray-600 max-w-3xl">
+  Premium coconut oils and specialty food products sourced from trusted
+  manufacturers in India and supplied to retailers across Canada.
+</p>
             <div className="grid md:grid-cols-3 gap-8">
               {products.map((product) => (
                 <div
@@ -272,7 +275,38 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+<section className="bg-[#123E2F] py-20 text-white">
+  <div className="max-w-7xl mx-auto px-6 text-center">
 
+    <h2 className="text-4xl font-bold mb-6">
+      Looking For A Reliable Distribution Partner?
+    </h2>
+
+    <p className="max-w-2xl mx-auto text-lg text-white/75 mb-8">
+      Contact Bethlehem Products Inc. to discuss retail, wholesale,
+      and distribution opportunities across Canada.
+    </p>
+
+    <div className="flex flex-wrap justify-center gap-4">
+
+      <a
+        href="mailto:sales@bethlehemproducts.ca"
+        className="bg-[#C9A84C] px-8 py-4 rounded font-semibold"
+      >
+        sales@bethlehemproducts.ca
+      </a>
+
+      <a
+        href="tel:2265056505"
+        className="border border-white/30 px-8 py-4 rounded"
+      >
+        226-505-6505
+      </a>
+
+    </div>
+
+  </div>
+</section>
       <Footer />
     </>
   );

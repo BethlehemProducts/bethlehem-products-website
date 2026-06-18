@@ -49,7 +49,6 @@ export const categories: ProductCategory[] = [
 ];
 
 export const products: Product[] = [
-export const products: Product[] = [
   {
     id: "kml-500ml",
     name: "KML Coconut Oil 500mL",
@@ -241,4 +240,4 @@ export const products: Product[] = [
     ],
   },
 ];
-];
+

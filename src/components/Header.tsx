@@ -2,54 +2,51 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-[#184D3B] text-white border-b border-white/10 shadow-lg">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <header className="absolute left-0 top-0 z-50 w-full border-b border-white/10 bg-black/20 backdrop-blur-sm">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="/" className="flex items-center gap-3">
-          <Image
-            src="/logos/bethlehem-logo.png"
-            alt="Bethlehem Products Inc. logo"
-            width={52}
-            height={52}
-            priority
-            className="h-12 w-auto"
-          />
+          <div className="relative h-12 w-12">
+ <Image
+  src="/logos/logo2-transparent.png"
+  alt="Bethlehem Products Inc logo"
+  fill
+  priority
+  className="object-contain"
+ />
+</div>
 
-          <div className="leading-tight">
-            <div className="text-lg md:text-xl font-bold tracking-wide">
+    
+          <div className="hidden sm:block">
+            <p className="text-lg font-bold text-white">
               Bethlehem Products Inc.
-            </div>
-            <div className="text-xs md:text-sm text-[#C9A84C] font-medium">
+            </p>
+            <p className="text-xs text-[#C9A84C]">
               Delivering Quality. Building Trust.
-            </div>
+            </p>
           </div>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8 font-medium">
-          <a href="/" className="hover:text-[#C9A84C] transition">
+        <nav className="hidden items-center gap-8 text-sm font-semibold text-white md:flex">
+          <a href="/" className="hover:text-[#C9A84C]">
             Home
           </a>
-
-          <a href="/about" className="hover:text-[#C9A84C] transition">
-            About Us
-          </a>
-
-          <a href="/products" className="hover:text-[#C9A84C] transition">
+          <a href="#products" className="hover:text-[#C9A84C]">
             Products
           </a>
-
-          <a href="#partners" className="hover:text-[#C9A84C] transition">
-            Retail Partners
+          <a href="#about" className="hover:text-[#C9A84C]">
+            About
           </a>
-
-          <a href="/contact" className="hover:text-[#C9A84C] transition">
+          <a href="#partners" className="hover:text-[#C9A84C]">
+            Partners
+          </a>
+          <a href="#contact" className="hover:text-[#C9A84C]">
             Contact
           </a>
-
           <a
-            href="mailto:sales@bethlehemproducts.ca"
-            className="bg-[#C9A84C] px-5 py-2 rounded-sm font-semibold text-white hover:bg-[#D4AF37] transition"
+            href="#contact"
+            className="bg-[#C9A84C] px-6 py-3 font-bold text-black hover:bg-[#b89536]"
           >
-            Contact Sales
+            Get a Quote
           </a>
         </nav>
       </div>

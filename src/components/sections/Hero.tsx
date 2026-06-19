@@ -3,16 +3,16 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative min-h-[760px] overflow-hidden text-white">
-     <Image
-  src="/images/hero/hero-modern1.png"
-  alt="Bethlehem Products Inc import distribution"
-  fill
-  priority
-  className="object-cover object-center"
-/>
+      <Image
+        src="/images/hero/hero-modern1.png"
+        alt="Bethlehem Products Inc import distribution"
+        fill
+        priority
+        className="object-cover object-center"
+      />
 
-      <div className="absolute inset-0 bg-black/45" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
+      <div className="absolute inset-0 bg-black/35" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/25 to-transparent" />
 
       <div className="relative mx-auto flex min-h-[760px] max-w-7xl items-center px-10 pt-32">
         <div className="max-w-2xl">
@@ -20,14 +20,15 @@ export default function Hero() {
             Ontario, Canada · Importer & Distributor
           </p>
 
-          <h1 className="font-serif text-4xl font-bold leading-tight md:text-6xl lg:text-7xl">
-            <>
-  Connecting Quality
-  <br />
-  Products from India
-  <br />
-  to Canada
-</>
+          <h1 className="font-serif text-4xl font-medium leading-[1.1] text-[#E8DFC8] md:text-5xl lg:text-6xl">
+            Bringing Premium
+            <br />
+            South Indian Products
+            <br />
+            to{" "}
+            <span className="text-[#B8963C]">
+              Canadian Retailers
+            </span>
           </h1>
 
           <div className="my-8 h-1 w-24 bg-[#C9A84C]" />

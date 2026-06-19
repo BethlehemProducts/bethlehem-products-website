@@ -8,18 +8,26 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-28 lg:grid-cols-[1fr_1.1fr]">
         <div>
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-[#C9A84C]">
-            Ontario, Canada · South Indian Products
+            Ontario, Canada · Importer & Distributor
           </p>
 
           <h1 className="max-w-4xl text-5xl font-bold leading-tight md:text-6xl">
-            Premium South Indian Products Distributed Across Canada
+            Premium Food Import & Distribution Across Canada
           </h1>
-
+<p className="mt-4 text-xl font-medium text-[#C9A84C]">
+  Delivering Quality. Building Trust.
+</p>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
-            Supplying KML coconut oils, coconut products, and specialty grocery
-            products to retailers, wholesalers, and distributors across Canada.
+            Bethlehem Products Inc. connects trusted international manufacturers
+with Canadian retailers, wholesalers, and food service businesses
+through reliable supply, premium products, and long-term partnerships.
           </p>
-
+<a
+  href="#partners"
+  className="rounded-sm bg-[#C9A84C] px-7 py-4 font-semibold text-white transition hover:bg-[#D4AF37]"
+>
+  Become a Retail Partner
+</a>
           <div className="mt-9 flex flex-wrap gap-4">
             <a
               href="#products"
@@ -37,10 +45,10 @@ export default function Hero() {
           </div>
 
           <div className="mt-10 grid grid-cols-2 gap-4 text-sm text-white/70 md:grid-cols-4">
-            <div>CFIA Ready</div>
-            <div>India Sourced</div>
-            <div>Wholesale Supply</div>
-            <div>Ontario Based</div>
+            <div>Importer & Distributor</div>
+<div>Wholesale Supply</div>
+<div>Retail Partnerships</div>
+<div>Ontario Based</div>
           </div>
         </div>
 

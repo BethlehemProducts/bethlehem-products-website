@@ -33,16 +33,54 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-6 py-10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {[
-                ["100%", "Quality Focused"],
-                ["India", "Product Origin"],
                 ["B2B", "Retail & Wholesale"],
                 ["ON", "Ontario Based"],
+                ["India", "Trusted Supply Partners"],
+                ["KML", "Launch Product Range"],
               ].map(([title, text]) => (
                 <div key={title}>
                   <h3 className="text-4xl font-bold text-[#C9A84C]">
                     {title}
                   </h3>
                   <p className="text-white">{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white py-20 border-b">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-12">
+              <p className="text-[#C9A84C] font-semibold uppercase tracking-[0.25em] mb-4">
+                What We Do
+              </p>
+
+              <h2 className="text-4xl md:text-5xl font-bold text-[#184D3B]">
+                Canadian Import, Distribution, and Retail Supply
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                [
+                  "Importing",
+                  "We source premium food products from trusted international manufacturers.",
+                ],
+                [
+                  "Distribution",
+                  "We supply grocery retailers, supermarkets, wholesalers, and food service businesses.",
+                ],
+                [
+                  "Retail Partnerships",
+                  "We build long-term relationships through reliable supply and professional service.",
+                ],
+              ].map(([title, text]) => (
+                <div key={title} className="rounded-xl bg-gray-50 p-8 shadow-sm border">
+                  <h3 className="text-2xl font-bold mb-4 text-[#184D3B]">
+                    {title}
+                  </h3>
+                  <p className="text-gray-700">{text}</p>
                 </div>
               ))}
             </div>
@@ -134,11 +172,11 @@ export default function HomePage() {
         <section id="products" className="py-24 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-5xl font-bold mb-12 text-[#184D3B]">
-              Our Product Range
+              Products Available For Retail & Wholesale Distribution
             </h2>
 <p className="mt-4 mb-12 text-lg text-gray-600 max-w-3xl">
-  Premium coconut oils and specialty food products sourced from trusted
-  manufacturers in India and supplied to retailers across Canada.
+  The current launch range focuses on KML Coconut Oil in 500 mL, 1 L,
+  and 2 L sizes for retail and wholesale distribution.
 </p>
             <div className="grid md:grid-cols-3 gap-8">
               {products.map((product) => (
@@ -176,7 +214,7 @@ export default function HomePage() {
                 </p>
 
                 <h2 className="text-5xl font-bold text-[#184D3B] mb-6">
-                  Connecting Premium South Indian Products With Canadian Retailers
+                  Connecting Trusted International Manufacturers With Canadian Retailers
                 </h2>
 
                 <p className="text-lg text-gray-600 mb-6">
@@ -186,9 +224,9 @@ export default function HomePage() {
                 </p>
 
                 <p className="text-lg text-gray-600 mb-8">
-                  Our mission is to provide high-quality coconut oils, coconut-based
-                  ingredients, and specialty food products backed by reliable supply,
-                  professional service, and long-term partnerships.
+                  Our mission is to provide high-quality food products backed by
+                  reliable supply, professional service, and long-term retailer
+                  partnerships.
                 </p>
               </div>
 
@@ -254,7 +292,7 @@ export default function HomePage() {
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/75">
               Partner with Bethlehem Products Inc. to bring trusted South Indian
-              coconut oil and specialty food products to your customers.
+              coconut oil products to your customers.
             </p>
 
             <div className="mt-9 flex justify-center gap-4">
@@ -297,10 +335,10 @@ export default function HomePage() {
       </a>
 
       <a
-        href="tel:2265056505"
+        href="mailto:info@bethlehemproducts.ca"
         className="border border-white/30 px-8 py-4 rounded"
       >
-        226-505-6505
+        info@bethlehemproducts.ca
       </a>
 
     </div>
